@@ -2422,6 +2422,43 @@ input, select, textarea {
 			#contact footer {
 				margin: 0;
 			}
+		
+		/* Box Styles*/
+		
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.col-4, .col-6-medium, .col-12-small {
+			flex: 1 1 30%; /* Adjust the basis percentage as needed */
+			box-sizing: border-box;
+			padding: 10px; /* Adjust padding as needed */
+		}
+		
+		.box.style2 {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+		}
+		
+		.box.style2 .image.featured {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.box.style2 .image.featured img {
+			max-height: 100%;
+			max-width: 100%;
+			object-fit: cover;
+		}
+		
+		.box.style2 h3, .box.style2 p {
+			margin: 10px 0;
+		}
 
 		/* Copyright */
 
